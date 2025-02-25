@@ -25,10 +25,10 @@ pipeline {
         
         }
            stage('Example 2') {
-               environment {Shreyas = 100}
+             //  environment {Shreyas = 100} //
             steps {
                  sh '''
-                 echo 'I am $Shreyas'
+                 echo 'I am Shreyas'
                  echo 'Hello World 2'
                 '''
             }
