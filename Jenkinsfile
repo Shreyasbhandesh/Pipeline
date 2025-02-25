@@ -12,12 +12,12 @@ pipeline {
             parallel{
                 stage('Build 1'){
                     steps {
-                         sh 'sleep 30 ; echo "This is build 1"'
+                         sh 'sleep 15 ; echo "This is build 1"'
                     }
                 }
         stage('Build 2'){
                     steps {
-                         sh 'sleep 30 ; echo "This is build 2"'
+                         sh 'sleep 15 ; echo "This is build 2"'
                     }
                 }
 
