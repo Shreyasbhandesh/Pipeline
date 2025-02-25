@@ -8,6 +8,22 @@ pipeline {
                 echo 'Hello World'
             }
         }
+        stage('Build both stages'){
+            parallel{
+                stage('Build 1'){
+                    step{
+                         sh 'sleep 30 ; echo "This is build 1"'
+                    }
+                }
+        stage('Build 2'){
+                    step{
+                         sh 'sleep 30 ; echo "This is build 2"'
+                    }
+                }
+
+            }
+        
+        }
            stage('Example 2') {
                environment {Shreyas = 100}
             steps {
