@@ -9,9 +9,7 @@ pipeline {
             }
         }
            stage('Example 2') {
-               environment {
-                Shreyas = credentials('Boss')
-            }
+               environment {Shreyas = 100}
             steps {
                  sh '''
                  echo 'I am $Shreyas'
